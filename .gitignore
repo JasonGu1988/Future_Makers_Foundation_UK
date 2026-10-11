@@ -1,0 +1,23 @@
+# Generated website and local previews
+/dist/
+/dist-preview/
+/dev-preview-root/
+*.tar.gz
+*.zip
+*.png~
+
+# Private data and local configuration
+.env
+.env.*
+*.sql
+*.sql.gz
+*.sql.zip
+*db_info.md
+*sftp_info.md
+/private/
+
+# Local tool files
+.DS_Store
+._*
+__pycache__/
+*.pyc

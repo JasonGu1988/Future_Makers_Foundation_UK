@@ -1,0 +1,11 @@
+{
+  "title": "Example headline",
+  "uri": "news/2026/example-headline",
+  "postDate": "2026-10-04 12:00:00",
+  "displayDate": "2026-10-04",
+  "summary": "One short sentence describing the update.",
+  "body": "<p>Write the opening paragraph here.</p>\n<p>Add another paragraph here.</p>",
+  "images": [],
+  "section": "news",
+  "published": true
+}
