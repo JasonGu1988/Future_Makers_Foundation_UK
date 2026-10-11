@@ -4,7 +4,7 @@ Copy the text below into a new Codex chat. Replace the bracketed fields and atta
 
 ---
 
-Please add a news update to this **static Future Makers Foundation website**. Use the existing site design and news format. The public site is published from generated static files; do not edit Craft CMS or its database.
+Please add a news update to this **static Future Makers Foundation website**. Read `AGENTS.md` and `.agents/skills/future-makers-news/SKILL.md` first. Use the existing site design and news format. The public site is published from generated static files; do not edit Craft CMS or its database.
 
 **Headline or topic:** [insert]
 
@@ -22,7 +22,7 @@ Write a clear, concise article for a UK charity. Use “Future Makers Foundation
 
 Check whether this story already exists. Create one new article file under `content/news/YYYY/` using the existing JSON format and a matching URL slug. Set the visible date from the public date I supplied, keep the article in the correct news order, and make the homepage latest-news cards and news index update automatically. Preserve all existing articles and their URLs. Leave historical legacy pages alone.
 
-Build the static preview, check the article, news index, homepage card, images, and mobile layout, and show me the preview and the exact proposed copy. **Wait for my approval before uploading the new article to the public site.** After I approve, build and deploy the static output through the existing IONOS setup, then verify the live article URL and report it to me. Keep credentials out of chat and out of the public website files.
+Build the static preview, check the article, news index, homepage card, images, and mobile layout, and show me the preview and the exact proposed copy. **Wait for my approval before uploading the new article to the public site or pushing it to this public GitHub repository.** After I approve, build and deploy the static output through the existing IONOS setup, update the GitHub backup, then verify the live article URL and GitHub commit. Keep credentials out of chat and out of the public website files.
 
 ---
 

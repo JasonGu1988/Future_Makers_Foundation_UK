@@ -12,6 +12,8 @@ The site uses plain HTML, CSS and JavaScript. Python 3.10+ builds the pages from
 - `examples/news-post.json` — template for a new article
 - `build.py` — generates the website and checks local links and images
 - `NEWS_UPDATE_PROMPT.md` — reusable instructions for drafting a news update
+- `AGENTS.md` — project context and editorial rules for AI coding assistants
+- `.agents/skills/future-makers-news/SKILL.md` — task guidance for adding news
 
 Generated output (`dist/` and `dist-preview/`), deployment archives, private credentials, database exports and unused legacy media are deliberately excluded from this repository. The files here are sufficient to build the published pages.
 
@@ -28,11 +30,11 @@ To inspect the home page locally, run `python3 -m http.server 8000 --directory d
 ## Add a news story
 
 1. Copy `examples/news-post.json` to `content/news/YYYY/your-short-headline.json`. Set `uri` to the matching path, such as `news/2026/your-short-headline`.
-2. Add the approved headline, summary, body and date. Use `displayDate` (`YYYY-MM-DD`) for the date readers see and `postDate` (UTC timestamp) for article order. Set `published` to `true` only when the article is approved.
+2. Add the headline, summary, body and date. Use `displayDate` (`YYYY-MM-DD`) for the date readers see and `postDate` (UTC timestamp) for article order. The builder requires `published: true` for a local preview, so keep drafts local and unpushed until approved.
 3. Put any approved photo in `source/uploads/`, reference it as `/uploads/filename.jpg`, add the filename to `images`, and give it descriptive alternative text. Check consent and image rights before publishing.
 4. Build and review the article, home page and news index. Deploy the generated `dist/` files to the hosting provider after approval.
 
-The latest news cards and full news index update automatically. For a copy-and-fill brief, use [NEWS_UPDATE_PROMPT.md](NEWS_UPDATE_PROMPT.md).
+The latest news cards and full news index update automatically. For a copy-and-fill brief, use [NEWS_UPDATE_PROMPT.md](NEWS_UPDATE_PROMPT.md); AI assistants can also follow [the news skill](.agents/skills/future-makers-news/SKILL.md).
 
 ## Publishing and rights
 
